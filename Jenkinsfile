@@ -1,7 +1,7 @@
 pipeline {
     agent any;
     stages {
-        stage('Listar arquivos do repositorio') {
+        stage('Listar todos os arquivos do repositorio') {
             when {
                 branch "main"
             }

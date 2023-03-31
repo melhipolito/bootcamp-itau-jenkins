@@ -1,7 +1,7 @@
 pipeline {
     agent any;
     stages {
-        stage('Listar todos os arquivos do repositorio') {
+        stage ('Listar todos os arquivos do repositorio') {
             when {
                 branch "main"
             }
@@ -9,8 +9,6 @@ pipeline {
                 sh "ls -la"
             }
         }
-    }
-    stages {
         stage('Install dependencies') {
             when {
                 branch "main"
